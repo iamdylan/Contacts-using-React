@@ -27,7 +27,7 @@ export const contacts = [
     id: 5,
     name: 'Natasha Romanoff',
     username: 'blackwidow',
-    email: 'hulk.pacifier@annie.ca'
+    email: 'hulk.pacifier@shield.com'
   },
   {
     id: 6,
