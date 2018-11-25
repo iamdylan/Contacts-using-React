@@ -4,7 +4,7 @@ import Card from './Card';
 const CardList = ({contacts}) => {
 	
 	return(
-		<div>
+		<React.Fragment>
 			{
 			contacts.map((user, i) => {
 				return (
@@ -17,7 +17,7 @@ const CardList = ({contacts}) => {
 				);
 			})
 		}
-		</div>
+		</React.Fragment>
 	);
 }
 
