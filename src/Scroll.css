@@ -1,0 +1,7 @@
+.scrollStyle{
+	overflow-y: scroll;
+	border: 1px solid black;
+	position: absolute;
+    height: 75%;
+    width: 100%;
+}
