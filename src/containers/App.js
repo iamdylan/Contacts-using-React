@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
-import {contacts} from './contacts';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import {contacts} from '../contacts';
+import Scroll from '../components/Scroll';
 import './App.css';
 
 class App extends Component{
@@ -19,8 +19,9 @@ class App extends Component{
 		
 	}
 	render(){
-		const filteredContacts = this.state.contacts.filter(contact =>{
-			return contact.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+		const {contacts, searchfield} = this.state;
+		const filteredContacts = contacts.filter(contact =>{
+			return contact.name.toLowerCase().includes(searchfield.toLowerCase());
 		})
 		return(
 			<div className='tc'>
