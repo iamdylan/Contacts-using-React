@@ -1,12 +1,14 @@
 {
-  "homepage": "https://iamdylan.github.io/Contacts-using-React/",
+  "homepage": "https://iamdylan.github.io/contacts-using-react/",
   "name": "contacts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
     "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
     "tachyons": "^4.11.1"
   },
   "scripts": {
