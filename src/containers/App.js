@@ -6,7 +6,6 @@ import Scroll from '../components/Scroll';
 import './App.css';
 
 import {setSearchField} from '../actions';
-import { searchContacts } from '../reducers';
 
 const mapStateToProps = (state) => {
 	return {
