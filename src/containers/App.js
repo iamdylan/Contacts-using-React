@@ -6,6 +6,7 @@ import Scroll from '../components/Scroll';
 import './App.css';
 
 import {setSearchField} from '../actions';
+import { searchContacts } from '../reducers';
 
 const mapStateToProps = (state) => {
 	return {
@@ -30,7 +31,7 @@ class App extends Component{
 	componentDidMount(){
 		fetch('https://jsonplaceholder.typicode.com/users')
 		.then(respone => respone.json())
-		.then(users=> this.setState({contacts: users}));
+		.then(users=> {this.setState({contacts: users})});
 	}
 
 	render(){
@@ -39,6 +40,9 @@ class App extends Component{
 		const filteredContacts = contacts.filter(contact =>{
 			return contact.name.toLowerCase().includes(searchField.toLowerCase());
 		})
+		if (contacts.length === 0){
+			return <h1 className='tc'>Loading...</h1>
+		}else {
 		return(
 			<div className='tc'>
 				<h1 className='f1'>Contacts</h1>
@@ -48,6 +52,7 @@ class App extends Component{
 				</Scroll>
 			</div>
 		);
+		}
 	}
 	
 }

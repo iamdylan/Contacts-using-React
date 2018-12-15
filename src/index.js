@@ -6,9 +6,9 @@ import './index.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
-import { searchRobots } from './reducers';
+import { searchContacts } from './reducers';
 
-const store = createStore(searchRobots);
+const store = createStore(searchContacts);
 
 ReactDOM.render(<Provider store={store}>
                     <App/>
