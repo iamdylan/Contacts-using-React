@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
-import {contacts} from '../contacts';
 import Scroll from '../components/Scroll';
 import './App.css';
 
@@ -24,8 +23,14 @@ class App extends Component{
 	constructor() {
 		super()
 		this.state = {
-			contacts: contacts
+			contacts: []
 		}
+	}
+
+	componentDidMount(){
+		fetch('https://jsonplaceholder.typicode.com/users')
+		.then(respone => respone.json())
+		.then(users=> this.setState({contacts: users}));
 	}
 
 	render(){

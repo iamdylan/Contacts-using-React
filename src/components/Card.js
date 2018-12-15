@@ -7,6 +7,7 @@ const Card = (props) => {
 			<div>
 				<h2>{props.name}</h2>
 				<p>{props.email}</p>
+				<p>{props.phone}</p>
 			</div>
 		</div>
 		);
