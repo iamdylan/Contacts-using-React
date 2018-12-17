@@ -5,44 +5,37 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import './App.css';
 
-import {setSearchField} from '../actions';
+import {setSearchField, requestContacts} from '../actions';
 
 const mapStateToProps = (state) => {
 	return {
-		searchField: state.searchField
+		searchField: state.searchContacts.searchField,
+		contacts: state.requestContacts.contacts,
+		isPending: state.requestContacts.isPending,
+		error: state.requestContacts.error
 	}
 }
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		onSearchChange: (event) => dispatch(setSearchField(event.target.value))
+		onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+		onRequestContacts: () => dispatch(requestContacts())
 	}
 }
 
 class App extends Component{
-	constructor() {
-		super()
-		this.state = {
-			contacts: []
-		}
-	}
-
 	componentDidMount(){
-		fetch('https://jsonplaceholder.typicode.com/users')
-		.then(respone => respone.json())
-		.then(users=> {this.setState({contacts: users})});
+		this.props.onRequestContacts();
 	}
 
 	render(){
-		const {contacts} = this.state;
-		const {searchField, onSearchChange} = this.props;
+		const { searchField, onSearchChange, contacts, isPending } = this.props;
 		const filteredContacts = contacts.filter(contact =>{
 			return contact.name.toLowerCase().includes(searchField.toLowerCase());
 		})
-		if (contacts.length === 0){
-			return <h1 className='tc'>Loading...</h1>
-		}else {
-		return(
+		return isPending ?
+			<h1 className='tc'>Loading...</h1> :
+			(
 			<div className='tc'>
 				<h1 className='f1'>Contacts</h1>
 				<SearchBox searchChange={onSearchChange}/>
@@ -51,9 +44,7 @@ class App extends Component{
 				</Scroll>
 			</div>
 		);
-		}
 	}
-	
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
