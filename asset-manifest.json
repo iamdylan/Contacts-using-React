@@ -1,15 +1,15 @@
 {
-  "main.css": "/contacts-using-react/static/css/main.8d51c37d.chunk.css",
-  "main.js": "/contacts-using-react/static/js/main.8f99e84c.chunk.js",
-  "main.js.map": "/contacts-using-react/static/js/main.8f99e84c.chunk.js.map",
-  "static/css/1.e7607bdb.chunk.css": "/contacts-using-react/static/css/1.e7607bdb.chunk.css",
-  "static/js/1.0704cc88.chunk.js": "/contacts-using-react/static/js/1.0704cc88.chunk.js",
-  "static/js/1.0704cc88.chunk.js.map": "/contacts-using-react/static/js/1.0704cc88.chunk.js.map",
-  "runtime~main.js": "/contacts-using-react/static/js/runtime~main.4022f2b8.js",
-  "runtime~main.js.map": "/contacts-using-react/static/js/runtime~main.4022f2b8.js.map",
-  "static/css/1.e7607bdb.chunk.css.map": "/contacts-using-react/static/css/1.e7607bdb.chunk.css.map",
-  "static/css/main.8d51c37d.chunk.css.map": "/contacts-using-react/static/css/main.8d51c37d.chunk.css.map",
-  "index.html": "/contacts-using-react/index.html",
-  "precache-manifest.44e53849556f5da2b7741b2dd98595d4.js": "/contacts-using-react/precache-manifest.44e53849556f5da2b7741b2dd98595d4.js",
-  "service-worker.js": "/contacts-using-react/service-worker.js"
+  "main.css": "/contacts-using-react-redux/static/css/main.8d51c37d.chunk.css",
+  "main.js": "/contacts-using-react-redux/static/js/main.147397f6.chunk.js",
+  "main.js.map": "/contacts-using-react-redux/static/js/main.147397f6.chunk.js.map",
+  "static/css/1.e7607bdb.chunk.css": "/contacts-using-react-redux/static/css/1.e7607bdb.chunk.css",
+  "static/js/1.0704cc88.chunk.js": "/contacts-using-react-redux/static/js/1.0704cc88.chunk.js",
+  "static/js/1.0704cc88.chunk.js.map": "/contacts-using-react-redux/static/js/1.0704cc88.chunk.js.map",
+  "runtime~main.js": "/contacts-using-react-redux/static/js/runtime~main.4cd1425f.js",
+  "runtime~main.js.map": "/contacts-using-react-redux/static/js/runtime~main.4cd1425f.js.map",
+  "static/css/main.8d51c37d.chunk.css.map": "/contacts-using-react-redux/static/css/main.8d51c37d.chunk.css.map",
+  "static/css/1.e7607bdb.chunk.css.map": "/contacts-using-react-redux/static/css/1.e7607bdb.chunk.css.map",
+  "index.html": "/contacts-using-react-redux/index.html",
+  "precache-manifest.99258c135ecff0c3a86b993d22986694.js": "/contacts-using-react-redux/precache-manifest.99258c135ecff0c3a86b993d22986694.js",
+  "service-worker.js": "/contacts-using-react-redux/service-worker.js"
 }
